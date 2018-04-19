@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4"
+    crossorigin="anonymous">
+
+  <title>Hello, world!</title>
+</head>
+
+<body>
+
+  <div class="container">
+
+    <h1>Validálás</h1>
+
+    <!-- sikerertelen alert -->
+    <div class="alert alert-danger alert-dismissible fade show" role="alert" style="display: none;">
+      <strong>Az alábbi mezők nem megfelelően vannak kitöltve:</strong>
+      <ul></ul>
+
+      <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+        <span aria-hidden="true">&times;</span>
+      </button>
+    </div>
+
+    <!-- regisztrációs form -->
+    <form>
+
+      <!-- mező: username -->
+      <div class="form-group">
+        <label for="username">Felhasználónév</label>
+        <input type="text" class="form-control" id="username"  placeholder="Felhasználónév">
+      </div>
+
+      <!-- mező: jelszó -->
+      <div class="form-group">
+        <label for="password">Jelszó</label>
+        <input type="password" class="form-control" id="password" placeholder="Jelszó">
+        <small class="form-text text-muted">Legyen legalább 7 karakter hoszzú.</small>
+      </div>
+
+      <!-- mező: jelszó megerősítés -->
+      <div class="form-group">
+        <label for="passwordAgain">Jelszó megerősítés</label>
+        <input type="password" class="form-control" id="passwordAgain" placeholder="Jelszó megerősítés">
+        <small class="form-text text-muted">Írd be ismét a jelszavad.</small>
+      </div>
+
+      <!-- checkbox: ászf -->
+      <div class="form-group form-check">
+        <input type="checkbox" class="form-check-input" id="aszf">
+        <label class="form-check-label" for="aszf">Elfogadom az
+          <a href="#">ÁSZF</a>-et</label>
+      </div>
+
+      <!-- submit gomb -->
+      <button type="submit" class="btn btn-primary">Regisztráció</button>
+    </form>
+
+    <!-- sikeres üzenet -->
+    <div id="successText"  style="display: none;">
+      Sikeresen regisztráltál! Hamarosan átirányítunk a profiloldalra.
+    </div>
+
+  </div>
+
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm"
+    crossorigin="anonymous"></script>
+
+  <!-- scripts.js -->
+  <script src="scripts.js"></script>
+
+</body>
+
+</html>
